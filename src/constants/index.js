@@ -23,6 +23,7 @@ import {
   jobit,
   tripguide,
   threejs,
+  growmore,
 } from "../assets";
 
 export const navLinks = [
@@ -116,55 +117,55 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
+    title: "Software Development",
+    company_name: "GrowMore",
+    icon: growmore,
+    iconBg: "#E6DEDD",
     date: "March 2020 - April 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Leverage the expertise of our experienced software developers proficient in the latest programming languages and technologies.",
+      "Experience fast, flexible, and efficient software development with our agile methodologies, ensuring timely delivery and adaptability.",
+      "Develop software that is scalable and adaptable to evolving business needs and technological advancements.",
+      "Ensure top-notch software performance and reliability with our comprehensive testing and quality assurance practices.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Mobile Application",
+    company_name: "GrowMore",
+    icon: growmore,
     iconBg: "#E6DEDD",
     date: "Jan 2021 - Feb 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Utilize the latest tools and technologies for innovative and future-proof mobile apps.",
+      "Ensure your mobile app integrates smoothly with existing systems and platforms.",
+      "Receive continuous updates, maintenance, and support to keep your app running smoothly.",
+      "Ensure broad reach and efficiency with our expertise in both iOS and Android development.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
+    title: "Web Development",
+    company_name: "GrowMore",
+    icon: growmore,
+    iconBg: "#E6DEDD",
     date: "Jan 2022 - Jan 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Utilise our seasoned specialists that have considerable knowledge with cutting-edge web technology.",
+      "Benefit from personalised web solutions that improve user experience and engagement.",
+      "Access a comprehensive variety of services, including responsive design, e-commerce, and UX optimisation.",
+      "Our web development solutions are sturdy, scalable, and future-proof, ensuring long-term success.",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
+    title: "Digital Marketing",
+    company_name: "GrowMore",
+    icon: growmore,
     iconBg: "#E6DEDD",
     date: "Jan 2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Leverage our years of experience and industry knowledge for top-notch marketing solutions.",
+      "Benefit from bespoke marketing strategies designed to meet your unique goals.",
+      "Access a full suite of digital marketing services under one cohesive strategy.",
+      "Maximize ROI with our advanced analytics and data-driven decision-making.",
     ],
   },
 ];
@@ -172,26 +173,34 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
+      "Choose Growmore for visionary IT solutions backed by my entrepreneurial journey and commitment to innovation as Chairman.",
+    name: "Hritik Singh",
+    designation: "Chairman",
+    company: "Growmore",
     image: "https://randomuser.me/api/portraits/women/4.jpg",
   },
   {
     testimonial:
       "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
+    name: "Gaurav Mandal",
+    designation: "BOD",
+    company: "Growmore",
     image: "https://randomuser.me/api/portraits/men/5.jpg",
   },
   {
     testimonial:
       "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
+    name: "Prasid Pun",
     designation: "CTO",
-    company: "456 Enterprises",
+    company: "Growmore",
+    image: "https://randomuser.me/api/portraits/women/6.jpg",
+  },
+  {
+    testimonial:
+      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+    name: "Anee Shrestha",
+    designation: "HOD Designer",
+    company: "Growmore",
     image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
 ];
