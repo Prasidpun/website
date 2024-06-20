@@ -31,8 +31,8 @@ const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <p className={styles.sectionSubTextBlack}>Introduction</p>
+        <h2 className={styles.sectionHeadTextBlack}>Overview.</h2>
       </motion.div>
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}

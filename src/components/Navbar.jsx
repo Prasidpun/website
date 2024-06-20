@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
+      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 background`}
     >
       <div className="w-full flex justify-between item-center max-w-7xl mx-auto">
         <Link
@@ -21,18 +21,22 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
-          <p className="text-white text-[18px] font-bold cursor-pointer flex">
+          <img
+            src={logo}
+            alt="logo"
+            className="w-20 h-20 object-contain navbackground"
+          />
+          {/* <p className="text-black text-[18px] font-bold cursor-pointer flex">
             GrowMore &nbsp;
-            <span className="sm: block-hidden">| IT Company</span>
-          </p>
+            <span className="text-blcak sm: block-hidden">| IT Company</span>
+          </p> */}
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((link) => (
             <li
               key={link.id}
               className={`${
-                active === link.title ? "text-white" : "text-secondary"
+                active === link.title ? "text-black" : "text-secondary"
               } ? hover:text-white text-[18px] 
               font-medium cursor-pointer`}
               onClick={() => setActive(link.title)}
@@ -41,7 +45,7 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        <div className="sm: hidden flex flex-1 justify-end items-center">
+        <div className="text-black sm: hidden flex flex-1 justify-end items-center">
           <img
             src={toggle ? close : menu}
             alt="menu"

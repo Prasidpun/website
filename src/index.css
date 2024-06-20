@@ -113,7 +113,21 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.background {
+  background-color: white;
+}
+.blackbackground {
+  background-color: black;
+}
+.costum-line:before {
+  background: #ff0000;
+}
+.navbackground {
+  background-color: transparent; /* Make the background transparent */
+  display: flex;
 
+  position: fixed; /* Fix the navbar at the top */
+}
 /* canvas- styles */
 .canvas-loader {
   font-size: 10px;

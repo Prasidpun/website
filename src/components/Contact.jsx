@@ -1,4 +1,4 @@
-import { React, useState, useRef } from "react";
+import React, { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { styles } from "../styles";
@@ -10,55 +10,57 @@ const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [loading, setLoading] = useState(false);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
   };
-  const handleSummit = (e) => {
+
+  const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
+    console.log("Sending email with the following details:", form);
     emailjs
       .send(
-        "service_3amq6vs",
-        "template_8m808td",
+        "service_1aqfkzq",
+        "template_m2r3j57",
         {
           from_name: form.name,
           to_name: "GrowMore",
           from_email: form.email,
-          to_email: "randommagar840@gmail.com",
+          to_email: "growmoretechnology3@gmail.com",
           message: form.message,
         },
-        "vCnFATOP3kutkZujh"
+        "czGYahLUHYmfygWlY"
       )
-      //service_3amq6vs serviceid
-      //template_8m808td templateid
-      //vCnFATOP3kutkZujh public key
       .then(
-        () => {
+        (result) => {
           setLoading(false);
+          console.log("Email successfully sent:", result.text);
           alert(
-            "Thank you for contacting. We will get back to you as soon as possible"
+            "Thank you for contacting us. We will get back to you as soon as possible."
           );
           setForm({ name: "", email: "", message: "" });
         },
         (error) => {
           setLoading(false);
-          console.log(error);
+          console.error("Email sending error:", error);
           alert("Something went wrong.");
         }
       );
   };
+
   return (
-    <div className="xl: mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
+    <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
+        className="flex-[0.75] bg-black-100 p-8 rounded-2xl blackbackground"
       >
         <p className={`${styles.sectionSubText}`}>Get in touch</p>
         <h3 className={`${styles.sectionHeadText}`}>Contact.</h3>
         <form
           ref={formRef}
-          onSubmit={handleSummit}
+          onSubmit={handleSubmit}
           className="mt-12 flex flex-col gap-8"
         >
           <label className="flex flex-col">
@@ -69,7 +71,7 @@ const Contact = () => {
               value={form.name}
               onChange={handleChange}
               placeholder="What's your name?"
-              className="bg-tertiary py-4 px-6 placeholder: text-secondary text-white rounded-lg outline-none border-none font-medium"
+              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
           <label className="flex flex-col">
@@ -80,7 +82,7 @@ const Contact = () => {
               value={form.email}
               onChange={handleChange}
               placeholder="What's your email?"
-              className="bg-tertiary py-4 px-6 placeholder: text-secondary text-white rounded-lg outline-none border-none font-medium"
+              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
           <label className="flex flex-col">
@@ -91,14 +93,14 @@ const Contact = () => {
               value={form.message}
               onChange={handleChange}
               placeholder="What do you want to say?"
-              className="bg-tertiary py-4 px-6 placeholder: text-secondary text-white rounded-lg outline-none border-none font-medium"
+              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
           <button
             type="submit"
             className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
           >
-            {loading ? "Sending" : "Send"}
+            {loading ? "Sending..." : "Send"}
           </button>
         </form>
       </motion.div>

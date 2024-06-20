@@ -4,7 +4,7 @@ import { ComputersCanvas } from "./canvas";
 
 const Hero = () => {
   return (
-    <section className="relative w-full h-screen mx-auto">
+    <section className="relative w-full h-screen mx-auto background">
       <div
         className={`${styles.paddingX} absolute insert-0 top-[120px] 
         max-w-7xl mx-auto flex flex-row 
@@ -15,10 +15,10 @@ const Hero = () => {
           <div className="w-1 sm:h-80 h-40 red-gradient" />
         </div>
         <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
+          <h1 className={`${styles.heroHeadTextBlack} text-black`}>
             Hi, We're <span className="text-[#A92417]">GrowMore</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+          <p className={`${styles.heroSubText} mt-2 text-black-100`}>
             At Growmore, we create stunning, functional websites that drive
             growth and elevate your online presence. Trust us for innovative IT
             solutions tailored to your business needs.
